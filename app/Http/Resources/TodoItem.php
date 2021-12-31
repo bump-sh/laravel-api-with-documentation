@@ -36,7 +36,7 @@ class TodoItem extends JsonResource
                 'folder' => Folder::make($this->whenLoaded('folder')),
             ],
             'links' => [
-                'self' => route('api.todo_items.show', [$this->folder_id, $this->id]),
+                'self' => route('api.todo-items.show', [$this->folder_id, $this->id]),
             ],
         ];
     }

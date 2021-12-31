@@ -18,7 +18,7 @@ class CreateTodoItemsTable extends Migration
             $table->foreignId('user_id');
             $table->foreignId('folder_id');
             $table->string('title');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

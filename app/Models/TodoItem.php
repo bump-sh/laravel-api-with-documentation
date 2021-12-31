@@ -10,6 +10,13 @@ class TodoItem extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'folder_id',
+        'title',
+        'description',
+    ];
+
     public function folder(): BelongsTo
     {
         return $this->belongsTo(Folder::class);
