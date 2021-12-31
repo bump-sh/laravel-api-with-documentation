@@ -7,6 +7,9 @@ use App\Models\Folder;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
+/**
+ * @group Folders
+ */
 class FoldersController extends Controller
 {
     /**

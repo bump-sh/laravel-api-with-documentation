@@ -8,6 +8,9 @@ use App\Models\TodoItem;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
+/**
+ * @group Todo Items
+ */
 class TodoItemsController extends Controller
 {
     /**
