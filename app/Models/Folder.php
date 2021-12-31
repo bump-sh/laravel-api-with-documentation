@@ -10,6 +10,11 @@ class Folder extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'name',
+    ];
+
     public function todoItems(): HasMany
     {
         return $this->hasMany(TodoItem::class);
