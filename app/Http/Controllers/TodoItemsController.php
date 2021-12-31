@@ -14,7 +14,7 @@ use Illuminate\Validation\Rule;
 class TodoItemsController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * List all todo items.
      *
      * @param  \App\Models\Folder  $folder
      * @return \Illuminate\Http\Response
@@ -25,7 +25,7 @@ class TodoItemsController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a new todo item.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
@@ -50,7 +50,7 @@ class TodoItemsController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Show a todo item.
      *
      * @param  \App\Models\Folder  $folder
      * @param  \App\Models\TodoItem  $todoItem
@@ -62,7 +62,7 @@ class TodoItemsController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a todo item.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
@@ -86,7 +86,7 @@ class TodoItemsController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a todo item.
      *
      * @param  \App\Models\Folder  $folder
      * @param  \App\Models\TodoItem  $todoItem

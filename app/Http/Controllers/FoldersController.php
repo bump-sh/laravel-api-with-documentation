@@ -13,7 +13,7 @@ use Illuminate\Validation\Rule;
 class FoldersController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * List all folders.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -24,7 +24,7 @@ class FoldersController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a new folder.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -47,7 +47,7 @@ class FoldersController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Show a folder.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
@@ -59,7 +59,7 @@ class FoldersController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a folder.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
@@ -82,7 +82,7 @@ class FoldersController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a folder.
      *
      * @param  \App\Models\Folder  $folder
      * @return \Illuminate\Http\Response
