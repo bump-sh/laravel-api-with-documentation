@@ -26,6 +26,8 @@ class FoldersController extends Controller
     /**
      * Create a new folder.
      *
+     * @bodyParam name string required The name of the folder.
+     *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -49,6 +51,8 @@ class FoldersController extends Controller
     /**
      * Show a folder.
      *
+     * @urlParam id int required The id of the folder to show.
+     *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
      * @return \Illuminate\Http\Response
@@ -60,6 +64,9 @@ class FoldersController extends Controller
 
     /**
      * Update a folder.
+     *
+     * @urlParam id int required The id of the folder to update.
+     * @bodyParam name string The new name of the folder.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
@@ -83,6 +90,8 @@ class FoldersController extends Controller
 
     /**
      * Delete a folder.
+     *
+     * @urlParam id int required The id of the folder to delete.
      *
      * @param  \App\Models\Folder  $folder
      * @return \Illuminate\Http\Response

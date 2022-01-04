@@ -16,6 +16,8 @@ class TodoItemsController extends Controller
     /**
      * List all todo items.
      *
+     * @urlParam folder int required The id of the folder that the todo item is in.
+     *
      * @param  \App\Models\Folder  $folder
      * @return \Illuminate\Http\Response
      */
@@ -26,6 +28,10 @@ class TodoItemsController extends Controller
 
     /**
      * Create a new todo item.
+     *
+     * @urlParam folder int required The id of the folder that the todo item is in.
+     * @bodyParam title string required The name of the todo item.
+     * @bodyParam description string The description of the todo item.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
@@ -52,6 +58,9 @@ class TodoItemsController extends Controller
     /**
      * Show a todo item.
      *
+     * @urlParam folder int required The id of the folder that the todo item is in.
+     * @urlParam todo_item int required The id of the todo item to show.
+     *
      * @param  \App\Models\Folder  $folder
      * @param  \App\Models\TodoItem  $todoItem
      * @return \Illuminate\Http\Response
@@ -63,6 +72,11 @@ class TodoItemsController extends Controller
 
     /**
      * Update a todo item.
+     *
+     * @urlParam folder int required The id of the folder that the todo item is in.
+     * @urlParam todo_item int required The id of the todo item to update.
+     * @bodyParam title string The name of the todo item.
+     * @bodyParam description string The description of the todo item.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\Folder  $folder
@@ -87,6 +101,9 @@ class TodoItemsController extends Controller
 
     /**
      * Delete a todo item.
+     *
+     * @urlParam folder int required The id of the folder that the todo item is in.
+     * @urlParam todo_item int required The id of the todo item to delete.
      *
      * @param  \App\Models\Folder  $folder
      * @param  \App\Models\TodoItem  $todoItem
