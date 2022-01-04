@@ -16,6 +16,8 @@ class TodoItemsController extends Controller
     /**
      * List all todo items.
      *
+     * @apiResourceCollection App\Http\Resources\TodoItem
+     * @apiResourceModel App\Models\TodoItem
      * @urlParam folder int required The id of the folder that the todo item is in.
      *
      * @param  \App\Models\Folder  $folder
@@ -29,6 +31,8 @@ class TodoItemsController extends Controller
     /**
      * Create a new todo item.
      *
+     * @apiResource App\Http\Resources\TodoItem
+     * @apiResourceModel App\Models\TodoItem
      * @urlParam folder int required The id of the folder that the todo item is in.
      * @bodyParam title string required The name of the todo item.
      * @bodyParam description string The description of the todo item.
@@ -58,6 +62,8 @@ class TodoItemsController extends Controller
     /**
      * Show a todo item.
      *
+     * @apiResource App\Http\Resources\TodoItem
+     * @apiResourceModel App\Models\TodoItem
      * @urlParam folder int required The id of the folder that the todo item is in.
      * @urlParam todo_item int required The id of the todo item to show.
      *
@@ -73,6 +79,8 @@ class TodoItemsController extends Controller
     /**
      * Update a todo item.
      *
+     * @apiResource App\Http\Resources\TodoItem
+     * @apiResourceModel App\Models\TodoItem
      * @urlParam folder int required The id of the folder that the todo item is in.
      * @urlParam todo_item int required The id of the todo item to update.
      * @bodyParam title string The name of the todo item.
@@ -102,6 +110,8 @@ class TodoItemsController extends Controller
     /**
      * Delete a todo item.
      *
+     * @apiResource App\Http\Resources\TodoItem
+     * @apiResourceModel App\Models\TodoItem
      * @urlParam folder int required The id of the folder that the todo item is in.
      * @urlParam todo_item int required The id of the todo item to delete.
      *

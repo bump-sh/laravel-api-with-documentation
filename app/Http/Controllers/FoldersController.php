@@ -15,6 +15,9 @@ class FoldersController extends Controller
     /**
      * List all folders.
      *
+     * @apiResourceCollection App\Http\Resources\Folder
+     * @apiResourceModel App\Models\Folder
+     *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
@@ -26,6 +29,8 @@ class FoldersController extends Controller
     /**
      * Create a new folder.
      *
+     * @apiResource App\Http\Resources\Folder
+     * @apiResourceModel App\Models\Folder
      * @bodyParam name string required The name of the folder.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -51,6 +56,8 @@ class FoldersController extends Controller
     /**
      * Show a folder.
      *
+     * @apiResource App\Http\Resources\Folder
+     * @apiResourceModel App\Models\Folder
      * @urlParam id int required The id of the folder to show.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -65,6 +72,8 @@ class FoldersController extends Controller
     /**
      * Update a folder.
      *
+     * @apiResource App\Http\Resources\Folder
+     * @apiResourceModel App\Models\Folder
      * @urlParam id int required The id of the folder to update.
      * @bodyParam name string The new name of the folder.
      *
