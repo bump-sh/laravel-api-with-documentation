@@ -22,19 +22,19 @@ class Folder extends JsonResource
                 'user_id' => $this->user_id,
                 'name' => $this->name,
                 'created' => [
-                    'human' => $this->created_at->diffForHumans(),
-                    'string' => $this->created_at->toDateTimeString(),
+                    'human' => optional($this->created_at)->diffForHumans(),
+                    'string' => optional($this->created_at)->toDateTimeString(),
                 ],
                 'updated' => [
-                    'human' => $this->updated_at->diffForHumans(),
-                    'string' => $this->updated_at->toDateTimeString(),
+                    'human' => optional($this->updated_at)->diffForHumans(),
+                    'string' => optional($this->updated_at)->toDateTimeString(),
                 ],
             ],
             'relationships' => [
                 'todo_items' => TodoItem::make($this->whenLoaded('todoItems')),
             ],
             'links' => [
-                'self' => route('api.folders.show', [$this->user_id]),
+                'self' => route('api.folders.show', [$this]),
             ],
         ];
     }

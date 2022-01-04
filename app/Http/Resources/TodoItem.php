@@ -24,12 +24,12 @@ class TodoItem extends JsonResource
                 'title' => $this->title,
                 'description' => $this->description,
                 'created' => [
-                    'human' => $this->created_at->diffForHumans(),
-                    'string' => $this->created_at->toDateTimeString(),
+                    'human' => optional($this->created_at)->diffForHumans(),
+                    'string' => optional($this->created_at)->toDateTimeString(),
                 ],
                 'updated' => [
-                    'human' => $this->updated_at->diffForHumans(),
-                    'string' => $this->updated_at->toDateTimeString(),
+                    'human' => optional($this->updated_at)->diffForHumans(),
+                    'string' => optional($this->updated_at)->toDateTimeString(),
                 ],
             ],
             'relationships' => [
