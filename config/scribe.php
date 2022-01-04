@@ -296,6 +296,15 @@ INTRO
          */
         'overrides' => [
             // 'info.version' => '2.0.0',
+            'x-topics' => [
+                [
+                    'title' => 'Getting Started',
+                    'content' => <<<'EOC'
+This webpage refers to the API. Find out more information!
+EOC,
+
+                ]
+            ]
         ],
     ],
 
