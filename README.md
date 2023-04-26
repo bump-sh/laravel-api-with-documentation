@@ -1,6 +1,6 @@
 ## About this repository
 
-The purpose of this repository is to showcase a concrete use case using [bump.sh](https://bump.sh/)
+The purpose of this repository is to showcase a concrete use case of an API server using Laravel framework with its automatically generated OpenAPI contract file which is published to [bump.sh](https://bump.sh/). You only write your Laravel code and get a public API documentation automatically without any hassle.
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
