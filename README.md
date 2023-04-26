@@ -1,3 +1,7 @@
+## About this repository
+
+The purpose of this repository is to showcase a concrete use case using [bump.sh](https://bump.sh/)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
